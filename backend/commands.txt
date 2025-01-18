@@ -1,0 +1,12 @@
+Project Account:
+0x000e06427e0db28ca3ffc262fed7d1b946f03f8976a4f64ee7cd3372011be50f
+
+//start command
+//starkly account deploy account.json --keystore keystore.json
+
+
+//deployement
+starkli declare target/dev/backend_HelloStarknet.contract_class.json --account account.json --keystore keystore.json
+
+
+starkly deploy [class hash] [constructor params] --account account.json --keystore keystore.json
