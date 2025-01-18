@@ -1,12 +1,25 @@
 Project Account:
 0x000e06427e0db28ca3ffc262fed7d1b946f03f8976a4f64ee7cd3372011be50f
 
-//start command
-//starkly account deploy account.json --keystore keystore.json
+// start command
+// starkli account deploy account.json --keystore keystore.json
 
 
-//deployement
-starkli declare target/dev/backend_HelloStarknet.contract_class.json --account account.json --keystore keystore.json
+// deployement
+starkli declare target/dev/backend_StakingContract.contract_class.json --account account.json --keystore keystore.json
 
 
-starkly deploy [class hash] [constructor params] --account account.json --keystore keystore.json
+
+// 
+starkli deploy [hash] [constructor params] --account account.json --keystore keystore.json
+
+
+
+
+--------------------------------------------------------------------------------------------------------------
+starkli deploy 0x03f7631ad18b65f785d0f1d7106d5357d8ce45d9ca735960e97912c2de45f099 0x0755a48533511155f282efcec31b149107dd242d89be2c69bc450a3f46243c81 0x04b188dcf2ae4edab78f35eaee5db28fb894126f014f6e90391d8b8a9b6cd3e4 --account account.json --keystore keystore.json
+
+
+
+Suxo's: 0x0755a48533511155f282efcec31b149107dd242d89be2c69bc450a3f46243c81
+Aditya's: 0x04b188dcf2ae4edab78f35eaee5db28fb894126f014f6e90391d8b8a9b6cd3e4
