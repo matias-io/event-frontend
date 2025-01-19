@@ -1,0 +1,52 @@
+/// This interface allows modification and retrieval of the contract rooms.
+#[starknet::interface]
+pub trait IHelloStarknet<TContractState> {
+    /// Deletes an existing room.
+    fn delete_room(ref self: TContractState, room_id: felt252) -> felt252 ;
+    /// Sets the room
+    fn create_room(ref self: TContractState, room_id: felt252) -> felt252 ;
+    /// Gets the room
+    fn find_room(self: @TContractState, room_id: felt252) -> felt252;
+}
+
+
+/// Simple contract for managing rooms.
+#[starknet::contract]
+mod HelloStarknet {
+
+    use starknet::storage::{
+        Map, StorageMapReadAccess, StorageMapWriteAccess,
+    };
+
+    #[storage]
+    struct Storage {
+        rooms: felt252,
+        homes: Map::<felt252, bool>, /// Room ID 
+    }
+
+    #[abi(embed_v0)]
+    impl HelloStarknetImpl of super::IHelloStarknet<ContractState> {
+
+
+        fn delete_room(ref self: ContractState, room_id: felt252) -> felt252  {
+            assert(room_id != 0, 'No room to delete');
+            self.homes.write(room_id, false);
+            return 000; 
+        }
+
+        fn create_room(ref self: ContractState, room_id: felt252) -> felt252 {
+            self.homes.write(room_id, true);
+            return 100; 
+        }
+
+
+        fn find_room(self: @ContractState, room_id: felt252) -> felt252 {
+            if self.homes.read(room_id) == true {
+                return 200;
+            }
+            return 298; 
+        }
+
+    }
+}
+
