@@ -1,0 +1,177 @@
+[
+  {
+    "name": "Concert A",
+    "minPrice": 50,
+    "time": 1004384000
+  },
+  {
+    "name": "Festival B",
+    "minPrice": 30,
+    "time": 1202531200
+  },
+  {
+    "name": "Theater Play C",
+    "minPrice": 15,
+    "time": 2006026400
+  },
+  {
+    "name": "Exhibition D",
+    "minPrice": 25,
+    "time": 1206632800
+  },
+  {
+    "name": "Music Event E",
+    "minPrice": 100,
+    "time": 2004336000
+  },
+  {
+    "name": "Seminar F",
+    "minPrice": 20,
+    "time": 4689609600
+  },
+  {
+    "name": "Epic Jam Session X",
+    "minPrice": 60,
+    "time": 100532480
+  },
+  {
+    "name": "Chill Zone Party",
+    "minPrice": 45,
+    "time": 5000212800
+  },
+  {
+    "name": "Karaoke Madness Night",
+    "minPrice": 35,
+    "time": 1685241600
+  },
+  {
+    "name": "Funky Fresh Friday Vibes",
+    "minPrice": 55,
+    "time": 160638400
+  },
+  {
+    "name": "Dorm Room Showcase",
+    "minPrice": 40,
+    "time": 1681862400
+  },
+  {
+    "name": "Noodle Night in the Lounge",
+    "minPrice": 20,
+    "time": 1609126400
+  },
+  {
+    "name": "Caffeine Overload Session",
+    "minPrice": 25,
+    "time": 1694210600
+  },
+  {
+    "name": "Sleepover Gone Wild",
+    "minPrice": 30,
+    "time": 1695902400
+  },
+  {
+    "name": "Ultimate Study Group Bash",
+    "minPrice": 50,
+    "time": 1696492800
+  },
+  {
+    "name": "Rave in Room 314",
+    "minPrice": 60,
+    "time": 1683936000
+  },
+  {
+    "name": "Netflix & Naps Night",
+    "minPrice": 15,
+    "time": 160225600
+  },
+  {
+    "name": "Cram Session Karaoke",
+    "minPrice": 40,
+    "time": 1000109200
+  },
+  {
+    "name": "Gamer's Paradise LAN Party",
+    "minPrice": 10,
+    "time": 1681344000
+  },
+  {
+    "name": "Messy Desk Debate Club",
+    "minPrice": 10,
+    "time": 1684924800
+  },
+  {
+    "name": "Pizza & Pi Day Celebration",
+    "minPrice": 20,
+    "time": 1691856000
+  },
+  {
+    "name": "Study Break Dance-Off",
+    "minPrice": 30,
+    "time": 1695405200
+  },
+  {
+    "name": "Retro Video Games Night",
+    "minPrice": 45,
+    "time": 1605680000
+  },
+  {
+    "name": "College Town Pub Crawl",
+    "minPrice": 80,
+    "time": 1602140200
+  },
+  {
+    "name": "Quantum Physics & Pizza",
+    "minPrice": 35,
+    "time": 1681180800
+  },
+  {
+    "name": "Hall of Fame Sleepover",
+    "minPrice": 25,
+    "time": 1003385600
+  },
+  {
+    "name": "Unstoppable Study Party",
+    "minPrice": 55,
+    "time": 1696090400
+  },
+  {
+    "name": "Broomball & Hot Cocoa",
+    "minPrice": 40,
+    "time": 1604969600
+  },
+  {
+    "name": "Procrastination Station",
+    "minPrice": 50,
+    "time": 1609031200
+  },
+  {
+    "name": "The Boring Lecture",
+    "minPrice": 10,
+    "time": 100230600
+  },
+  {
+    "name": "Secret Lair Party",
+    "minPrice": 60,
+    "time": 1686528000
+  },
+  {
+    "name": "Dorm Olympics Opening Ceremony",
+    "minPrice": 45,
+    "time": 1686039200
+  },
+  {
+    "name": "Monday Morning Madness",
+    "minPrice": 15,
+    "time": 1698441600
+  },
+  {
+    "name": "Pet Rock Exhibit",
+    "minPrice": 5,
+    "time": 1684000400
+  },
+  {
+    "name": "Crack Open the Books Night",
+    "minPrice": 20,
+    "time": 1603580200
+  }
+]
