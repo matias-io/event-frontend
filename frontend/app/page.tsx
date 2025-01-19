@@ -1,27 +1,33 @@
-import CardContainer from './Components/CardContainer';
-import Footer from './Components/Footer';
-import Header from './Components/Header';
+"use client";
+
+import CardContainer from "./Components/CardContainer";
+import ManageRooms from "./Components/ManageRooms";
+import Footer from "./Components/Footer";
+import Header from "./Components/Header";
 
 const HomePage = () => {
-
   return (
-    <>
+    <div className="bg-gray-100 min-h-screen flex flex-col">
+      {/* Header Section */}
       <Header />
 
-      <div className="flex flex-col min-h-screen">
-        <main className="flex-grow">
-          <div className="mx-auto my-12">
-            <h1 className="text-3xl font-semibold text-center mb-6">Current Market</h1>
+      {/* Main Content */}
+      <main className="flex-grow flex flex-col items-center justify-center px-4 mt-16">
+        <div className="w-full max-w-4xl text-center">
+          {/* Manage Rooms Section */}
+          <ManageRooms />
 
-
-            {/* API CALL DONE HERE USING FETCH */}
-            <CardContainer/>
+          {/* Wallet Bar and Market Section */}
+          <div className="mt-12">
+            {/* <WalletBar /> */}
+            <CardContainer />
           </div>
-        </main>
+        </div>
+      </main>
 
-      </div>
-        <Footer />
-    </>
+      {/* Footer Section */}
+      <Footer />
+    </div>
   );
 };
 

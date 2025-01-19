@@ -1,20 +1,20 @@
 const Footer = () => (
     <footer
-      className="pt-12 pb-10 bg-gray-800 text-white text-center py-4 mt-12"
+      className="pt-12 pb-10 bg-gray-900 text-white text-center py-4 mt-12"
       style={{ marginTop: 'auto' }} // Keeps it at the bottom of the page
     >
-      <p>Futuristic Stocks &copy; {new Date().getFullYear()}</p>
+      <p>Focusify &copy; {new Date().getFullYear()}</p>
       <p>
         Built with ❤️ using{' '}
         <a
-          href="https://solace.com/"
+          href="https://www.starknet.io/"
           target="_blank"
           rel="noopener noreferrer"
           style={{ color: '#00d8ff', textDecoration: 'none' }}
         >
-          Solace
+          Starknet Technologies
         </a>{' '}
-        For UOttaHack 7
+        for UOttaHack 7
       </p>
     </footer>
 );

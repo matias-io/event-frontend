@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 type CardProps = {
   market_type: string;
   region: string;
@@ -20,6 +22,9 @@ const Card = ({
   const statusColor = current_status === 'open' ? 'bg-green-500' : 'bg-red-500';
 
   return (
+    <Link
+      href={"/room/" + region}>
+    
     <div className="max-w-sm w-full bg-white border rounded-lg shadow-lg overflow-hidden m-4">
       <div className={`p-4 ${statusColor} text-white text-center`}>
         <h2 className="text-xl font-bold">{region}</h2>
@@ -40,6 +45,8 @@ const Card = ({
         </p>
       </div>
     </div>
+    
+    </Link>
   );
 };
 

@@ -38,10 +38,13 @@ const CardContainer = () => {
   if (error) return <div className="text-center text-red-500">{error}</div>;
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-screen-lg mx-auto">
+    <div className='mt-16'>
+<h1 className="text-3xl font-semibold mb-6">Available Rooms</h1>
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-screen-lg">
       {markets.map((market, index) => (
         <Card key={index} {...market} />
       ))}
+    </div>
     </div>
   );
 };
