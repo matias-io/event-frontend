@@ -26,11 +26,16 @@ If you are running it on a UNIX environment, please do the following :
         // Builds the project
         Scarb build
         
+        
         // deploys the account (only do ONCE on initiation) 
         starkli account deploy account.json --keystore keystore.json
+
+
         
         // Declaration
         starkli declare target/dev/backend_HelloStarknet.contract_class.json--account account.json --keystore keystore.json
+
+        
         
         // Deployment to Starkscan
         starkli deploy [hash] [constructor params] --account account.json --keystore keystore.json
