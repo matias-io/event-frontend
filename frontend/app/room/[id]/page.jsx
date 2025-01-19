@@ -1,12 +1,12 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Footer from "../../Components/Footer";
 import Header from "../../Components/Header";
 
 import { useAccount } from "@starknet-react/core";
 
-const SlugPage = ({ params }: { params: { slug: string } }) => {
+const SlugPage = ({ params }) => {
   const { address } = useAccount();
   const [isInRoom, setIsInRoom] = useState(false); // Replace with actual room membership state
   const [timeRemaining, setTimeRemaining] = useState(1500); // Hardcoded timer (e.g., 25 minutes)
@@ -17,7 +17,7 @@ const SlugPage = ({ params }: { params: { slug: string } }) => {
   };
 
   // Convert timeRemaining to MM:SS format
-  const formatTime = (time: number) => {
+  const formatTime = (time) => {
     const minutes = Math.floor(time / 60);
     const seconds = time % 60;
     return `${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;

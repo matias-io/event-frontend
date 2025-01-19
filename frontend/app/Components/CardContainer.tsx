@@ -22,7 +22,7 @@ const CardContainer = () => {
         const data = await import('./data.json');
         setEvents(data.default); // Set the event data in state
       } catch (err) {
-        setError('An error occurred while importing data.');
+        setError('An error occurred while importing data.' + {err});
       } finally {
         setLoading(false);
       }

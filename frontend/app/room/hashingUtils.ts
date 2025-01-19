@@ -11,17 +11,19 @@ const base62Chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvw
 
 const encodeBase62 = (num: bigint): string => {
   let encoded = "";
-  while (num > 0) {
-    encoded = base62Chars[Number(num % 62n)] + encoded;
-    num = num / 62n;
+  const base = BigInt(62); // Use BigInt() constructor instead of literal 62n
+  while (num > BigInt(0)) {
+    encoded = base62Chars[Number(num % base)] + encoded;
+    num = num / base;
   }
   return encoded || "0"; // Ensure we return '0' if the number is 0
 };
 
 const decodeBase62 = (str: string): bigint => {
-  let decoded = 0n;
+  let decoded = BigInt(0);
+  const base = BigInt(62); // Use BigInt() constructor
   for (let i = 0; i < str.length; i++) {
-    decoded = decoded * 62n + BigInt(base62Chars.indexOf(str[i]));
+    decoded = decoded * base + BigInt(base62Chars.indexOf(str[i]));
   }
   return decoded;
 };

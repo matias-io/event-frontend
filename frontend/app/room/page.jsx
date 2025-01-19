@@ -33,7 +33,7 @@ const { data: prevRoom, error: roomError } = useReadContract({
       ],
       state_mutability: "view",
     },
-  ] as const,
+  ],
   functionName: "get_balance",
   address: "0x030ae71e423bc35c408e5bd0134f4b35c78d7fa10a6f5c89c730be3d9c2f2cc4",
   args: [],
