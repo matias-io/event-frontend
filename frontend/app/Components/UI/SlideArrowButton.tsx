@@ -38,7 +38,7 @@ export default function SlideArrowButton({
   };
 
   // Set background color conditionally based on address state
-  const backgroundColor = address ? "bg-green-900" : "bg-red-900";
+  const backgroundColor = address ? "bg-green-900" : "bg-red-500";
 
   return (
     <div className="relative">

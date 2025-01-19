@@ -14,13 +14,13 @@ const Header = () => {
 
   return (
     <header
-      className={`bg-gray-900 text-white sticky top-0 z-50 shadow-md transition-all duration-500 ${
+      className={`bg-hidden text-black sticky top-0 z-50 transition-all duration-500 ${
         showWallet ? 'py-6' : 'py-4'
       }`} // Animate padding for height change
     >
       <div className="mx-auto flex items-center justify-between px-6 max-w-7xl">
         {/* Title */}
-        <h1 className="text-2xl md:text-4xl font-bold hover:scale-105 transition-transform duration-300">
+        <h1 className="text-2xl md:text-4xl font-black hover:scale-105 transition-transform duration-300">
           <Link href="/" className="hover:text-gray-300">
             Focusify
           </Link>
