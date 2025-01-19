@@ -8,7 +8,7 @@ type CardProps = {
 
 const Card = ({ name, minPrice, time }: CardProps) => {
   const isUpcoming = Date.now() < time * 1000; // Compare with current time in milliseconds
-  const statusColor = isUpcoming ? 'bg-green-500' : 'bg-red-500';
+  const statusColor = isUpcoming ? 'bg-green-600' : 'bg-red-600';
 
   return (
     <Link href={"/room/" + name}>

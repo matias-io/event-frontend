@@ -24,7 +24,7 @@ const WalletBar: React.FC = () => {
             <button
               key={connector.id}
               onClick={() => connect({ connector })}
-              className="border border-gray-800 text-gray-800 font-medium py-2 px-4 bg-green-400 hover:bg-green-500 rounded-lg transition-all duration-300 ease-in-out transform hover:scale-105"
+              className="border border-gray-800 text-white font-medium py-2 px-4 bg-green-600 hover:bg-green-700 rounded-lg transition-all duration-300 ease-in-out transform hover:scale-105"
             >
               Connect {connector.id}
             </button>
@@ -44,7 +44,7 @@ const WalletBar: React.FC = () => {
           </div>
           <button
             onClick={() => disconnect()}
-            className="border border-gray-800 text-gray-800 font-medium py-2 px-4 bg-red-400 hover:bg-red-500 rounded-lg transition-all duration-300 ease-in-out transform hover:scale-105"
+            className="border border-gray-800 text-white font-medium py-2 px-4 bg-red-600 hover:bg-red-700 rounded-lg transition-all duration-300 ease-in-out transform hover:scale-105"
           >
             Disconnect
           </button>
