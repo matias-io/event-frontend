@@ -18,6 +18,24 @@ Here is the deployed version of smart contract on [Starkscan](https://sepolia.st
 You can explore the backend code here:  
 [GitHub Repository](https://github.com/matias-io/focusify/tree/main/backend/src)
 
+
+If you want to run it, you need to first build it, 
+
+If you are running it on a UNIX environment, please do the following : 
+        
+        // Builds the project
+        Scarb build
+        
+        // deploys the account (only do ONCE on initiation) 
+        starkli account deploy account.json --keystore keystore.json
+        
+        // Declaration
+        starkli declare target/dev/backend_HelloStarknet.contract_class.json--account account.json --keystore keystore.json
+        
+        // Deployment to Starkscan
+        starkli deploy [hash] [constructor params] --account account.json --keystore keystore.json
+        
+
 ## Frontend
 
 Note: If errors occur due to outdated packages. use **--force** flag.
