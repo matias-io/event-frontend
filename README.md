@@ -1,6 +1,6 @@
 # Focusify
 ![Focusify Logo ](/frontend/app/favicon.ico)
-![Project Image (readmegif.gif)
+![Project Image ](readmegif.gif)
 
 ## Awards 
 
