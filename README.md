@@ -4,7 +4,7 @@
 
 ## Awards 
 
- - Challenge Winner for *Starknet Challenge* [@UottaHack 7 Hackathon] (https://2025.uottahack.ca/) 🎖️
+ - Challenge Winner for *Starknet Challenge* [@UottaHack 7 Hackathon](https://2025.uottahack.ca/) 🎖️
 
 ## Background
 
