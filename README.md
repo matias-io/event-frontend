@@ -1,26 +1,55 @@
-# Focusify!
+# Focusify
+![Focusify Logo ](/frontend/app/favicon.ico)
+![Project Image ](readmegif.gif)
+
+## Awards 
+
+ - Challenge Winner for *Starknet Challenge* [@UottaHack 7 Hackathon](https://2025.uottahack.ca/) 🎖️
 
 ## Background
 
-We identified a significant gap between students' intentions to work or study and their actual commitment. To address this, we developed a decentralized platform that gamifies accountability. On this platform, students can stake money against one another, creating a financial incentive to stay focused. If a student leaves the session prematurely, their stake is redistributed among those who remain. This system encourages longer, more effective study sessions while turning learning into a collaborative and motivating experience with tangible rewards.
+A Starknet powered smart contract platform aimed to provide event-based focus groups 🧠, lessons 🧑‍🏫, and competition hosting ⚒️. This work is meant to be and continue to be open source, feel free to contact me or interact this repo for contibutions
 
-This is just our first implementation, with the primary goal of promoting cryptocurrency and Ethereum usage among youth, while also providing students with real value for studying.
+We identified a significant gap between students' intentions and professioals alike to work,  study, anf focus on their actual commitment. Focusify aims to solve this, we developed a decentralized platform that gamifies accountability. On this platform, users can stake money against one another, creating a financial incentive to stay focused. If a student leaves the session prematurely, their stake is redistributed among those who remain. This system encourages longer, more effective study sessions while turning learning into a collaborative and motivating experience with tangible rewards. 
 
-Looking ahead, we plan to evolve this project by allowing users to vote on specific causes within rooms, ensuring adherence to group rules, and expanding the features to further enhance engagement and accountability.
+On the roadmap, focusify will implement more parameters and administration setting on rooms that will enable prize distrbution for smart competitions, lessons or sponsorships a particular event might need.  Moreover, we plan to evolve this project by allowing users to vote on specific causes within rooms, ensuring adherence to group rules, and expanding the features to further enhance engagement and accountability. We aim to increase crypto adoption through underrepresented needs in the crypto space.
 
 ## Backend
 The backend is a straightforward Cairo script, located at `backend/src/lib.cairo`. 
-This script enables the UI to interact with the smart contract, allowing data to be stored using a `felt252` type.
-There are basic getter and setter functions
+This script enables the UI to interact with the smart contract, allowing most data to be stored using a `felt252` type via encoding tactics.
 
 Here is the deployed version of smart contract on [Starkscan](https://sepolia.starkscan.co/contract/0x07b4875c6ee142b302cf6ab74803a368992e82ff4087afeaa1bd1c9ab0a57a43#read-write-contract-sub-write)
 
 You can explore the backend code here:  
 [GitHub Repository](https://github.com/matias-io/focusify/tree/main/backend/src)
 
+### Building Backend
+If you want to run it, you need to first build it, 
+
+If you are running it on a UNIX environment, please do the following : 
+        
+        // Builds the project
+        Scarb build
+        
+        
+        // deploys the account (only do ONCE on initiation) 
+        starkli account deploy account.json --keystore keystore.json
+
+
+        
+        // Declaration
+        starkli declare target/dev/backend_HelloStarknet.contract_class.json--account account.json --keystore keystore.json
+
+        
+        
+        // Deployment to Starkscan
+        starkli deploy [hash] [constructor params] --account account.json --keystore keystore.json
+        
+        For more info not covered, considered official docs by [Starknet](https://docs.starknet.io/quick-start/environment-setup/)
+
 ## Frontend
 
-Note: If errors occur due to outdated packages. use **--force** flag.
+Note: If errors occur due to outdated packages. use **--force** flag due to adoption of React 19, which isn't formally liked by most dependancies 🥲
 
 ### Running locally in development mode
 
