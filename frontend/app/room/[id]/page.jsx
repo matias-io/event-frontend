@@ -6,6 +6,9 @@ import Header from "../../Components/Header";
 
 import { useAccount } from "@starknet-react/core";
 
+export const runtime = 'edge';
+
+
 const SlugPage = ({ params }) => {
   const { address } = useAccount();
   const [isInRoom, setIsInRoom] = useState(false); // Replace with actual room membership state
